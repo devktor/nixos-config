@@ -28,9 +28,9 @@
   bindsym $mod+Shift+b exec ${browser}
   bindsym $mod+Shift+f exec ${filemanager}
   bindsym $mod+Shift+n exec ${editor}
-  bindsym $mod+Shift+m workspace 2; exec ${mail}; 
-  bindsym $mod+Shift+s workspace 2; exec ${pkgs.signal-desktop}/bin/signal-desktop;
-  bindsym $mod+Shift+t workspace 2; exec ${pkgs.qtox}/bin/qtox;
+  bindsym $mod+Shift+m exec ${mail}; 
+  bindsym $mod+Shift+s exec ${pkgs.signal-desktop}/bin/signal-desktop;
+  bindsym $mod+Shift+t exec ${pkgs.qtox}/bin/qtox;
   bindsym $mod+Shift+k exec ${pkgs.keepassx2}/bin/keepassx
 
   
