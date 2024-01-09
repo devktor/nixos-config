@@ -20,11 +20,9 @@
   users.users.vic = {
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-     initialPassword = "asdasd123";
      packages = with pkgs; [
        firefox
        thunderbird
-       keepassx
        birdtray
        libreoffice
        logseq
@@ -35,15 +33,18 @@
        zoom-us
        protonmail-bridge
        speedcrunch
-       keepassx2
+       keepassxc
        killall
        gnupg
        gcc
        valgrind
        gdb
+       spotify
        spotify-tray
-       blueman
        cryptsetup
+       ledger-live-desktop
+       ledger-udev-rules
+       prusa-slicer
      ];
    };
 

@@ -31,7 +31,7 @@
   bindsym $mod+Shift+m exec ${mail}; 
   bindsym $mod+Shift+s exec ${pkgs.signal-desktop}/bin/signal-desktop;
   bindsym $mod+Shift+t exec ${pkgs.qtox}/bin/qtox;
-  bindsym $mod+Shift+k exec ${pkgs.keepassx2}/bin/keepassx
+  bindsym $mod+Shift+k exec ${pkgs.keepassxc}/bin/keepassxc
 
   
   # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -174,6 +174,5 @@
   exec --no-startup-id ${mail_tray}
   exec --no-startup-id ${pkgs.protonmail-bridge}/bin/protonmail-bridge
   exec --no-startup-id ${pkgs.spotify-tray}/bin/spotify-tray -m
-  exec --no-startup-id ${pkgs.blueman}/bin/blueman-applet
   exec_always --no-startup-id i3-msg workspace 1
 ''
