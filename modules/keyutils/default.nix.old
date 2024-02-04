@@ -1,0 +1,20 @@
+{config, pkgs, lib, ... }:
+
+let
+  keyutils = pkgs.fetchFromGitHub {
+    owner = "devktor";
+    repo = "keyutils";
+    rev = "v0.0.1";
+    sha256 = "e1529d68a3131804a226dce6eb84f7e2f5f57d1b";
+  };
+in
+pkgs.stdenv.mkDerivation {
+  name = "keyutils";
+  src = keyutils;
+  
+  installPhase = ''
+    mkdir -p $out/bin
+    cp ${keyutils}/gen_bip39.py $out/bin/bip39.py
+    chmod +x $out/bin/bip39.py
+  '';
+}

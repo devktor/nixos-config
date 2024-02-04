@@ -29,10 +29,9 @@
   bindsym $mod+Shift+f exec ${filemanager}
   bindsym $mod+Shift+n exec ${editor}
   bindsym $mod+Shift+m exec ${mail}; 
-  bindsym $mod+Shift+s exec ${pkgs.signal-desktop}/bin/signal-desktop;
   bindsym $mod+Shift+t exec ${pkgs.qtox}/bin/qtox;
   bindsym $mod+Shift+k exec ${pkgs.keepassxc}/bin/keepassxc
-
+  bindsym $mod+Shift+s exec ${pkgs.signal-desktop}/bin/signal-desktop
   
   # There also is the (new) i3-dmenu-desktop which only displays applications
   # shipping a .desktop file. It is a wrapper around dmenu, so you need that

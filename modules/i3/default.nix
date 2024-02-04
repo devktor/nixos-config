@@ -6,7 +6,7 @@
     terminal = "${pkgs.alacritty}/bin/alacritty --config-file /etc/alacritty.yml";
     filemanager = "${terminal} -e ${pkgs.ranger}/bin/ranger";
     editor = "${terminal} -e ${pkgs.vim}/bin/vim";
-    browser = "${pkgs.firefox}/bin/firefox";
+    browser = "${pkgs.chromium}/bin/chromium";
     mail = "${pkgs.thunderbird}/bin/thunderbird";
     mail_tray = "${pkgs.birdtray}/bin/birdtray";
     background = "/etc/background.png";
